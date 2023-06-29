@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .image-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+    }
+    .image-container .text {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+    .image-container .top-text {
+      top: 10%;
+    }
+    .image-container .bottom-text {
+      bottom: 10%;
+    }
+    </style>
+</head>
+<body>
+
+<form id="form" >
+    <input type="text" placeholder="Top Text" id="top-Text">
+    <input type="url" id="imageURL" placeholder="Enter an image URL" required>
+    <input type="text" placeholder="Bottom Text" id="bottom-Text">
+    <button type="submit">Combine</button>
+</form>
+
+<button type="submit" id="removeID">Remove</button>
+
+<div id="meme-container"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
